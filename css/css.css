@@ -1,0 +1,619 @@
+.topnav {
+  overflow: hidden;
+}
+
+.logo{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #333;
+  width: 150px;
+  position: absolute;
+  margin-left: 50%;
+  left: -75px;
+  top:10px;
+}
+
+.color{
+  color: gray;
+}
+
+.searchcontanier{
+  padding: 0px 16px;
+}
+.search{
+  background-image: url('../img/searchicon.png');
+  background-repeat: no-repeat;
+  width: 130px;
+  box-sizing: border-box;
+  border: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text] {
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=text]:focus {
+    width: 200px;
+}
+
+
+#menu{
+  float: left;
+  display: block;
+  margin-left: 20px;
+}
+
+
+
+ul.dropdown-menu li{
+  display: block;
+  white-space: nowrap;
+}
+
+ul.dropdown-menu {
+  left: 100%;
+  top: 0;
+}
+
+ul.dropdown-menu{
+  display: none;
+}
+
+li{
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+}
+
+a:link {
+    color: #333;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+  color:#e2d86a;
+}
+
+a{
+  color: black;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#homepage{
+  width: 100%;
+  height: 100%;
+  background-color: none;
+}
+
+#back{
+  width: 100%;
+  height: 900px;
+  background-color: white;
+}
+
+#frame{
+	width: 1100px;
+	height:1000px;
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+  top: 100px;
+	background: white;
+}
+
+
+
+#festival{
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 40px;
+  position: relative;
+  margin-left: -100px;
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
+}
+
+#art{
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 25%;
+  margin-left: -100px;
+  background-image: url("../img/art.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#music{
+  top:-250px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  background-image: url("../img/music.jpg");
+  background-repeat: no-repeat;
+}
+
+#food{
+  top: -500px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 75%;
+  margin-left: -100px;
+  background-image: url("../img/food.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #EEE8AA;
+}
+
+#art:hover .overlay {
+  opacity: 1;
+}
+
+#music:hover .overlay {
+  opacity: 1;
+}
+
+#food:hover .overlay {
+  opacity: 1;
+}
+
+.hovertext {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+ font-size: 35px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+}
+
+.artintro{
+  top:-500px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 25%;
+  margin-left: -100px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+
+.musicintro{
+  top:-767px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+
+.foodintro{
+  top:-1033px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  left: 75%;
+  margin-left: -100px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+
+.line{
+  top:-1170px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  left: 60%;
+  margin-left: -100px;
+  border: 0;
+  border-left: solid #EEE8AA 2px;
+}
+
+#shopping{
+	width: 1100px;
+	height:800px;
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+  top: 100px;
+	background: white;
+}
+
+.hideme{
+  opacity: 0;
+}
+
+.jewelry{
+  background-image: url("../img/jewelry.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 500px;
+  height: 500px;
+  float: right;
+  right: 10px;
+}
+
+.shoppingtitle{
+  float: left;
+  width: 500px;
+  height: 150px;
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+}
+
+.shoppingintro{
+  float: left;
+  width: 580px;
+  height: 400px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-style: italic;
+  color: gray;
+}
+
+button{
+  background-color: #EEE8AA;
+  width: 140px;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #333;
+  left: 50%;
+  position: relative;
+  margin-left: -70px;
+}
+
+#edina{
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 200px;
+}
+#edina:hover{
+  color:#EEE8AA;
+}
+
+#stanthony {
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 250px;
+}
+
+#stanthony:hover{
+  color:#EEE8AA;
+}
+
+#eagan {
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 300px;
+}
+
+#eagan:hover{
+  color:#EEE8AA;
+}
+
+#uptown{
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 350px;
+}
+
+#uptown:hover{
+  color:#EEE8AA;
+}
+
+#stone{
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 400px;
+}
+
+#stone:hover{
+  color:#EEE8AA;
+}
+
+#loring {
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 450px;
+}
+
+#loring:hover{
+  color:#EEE8AA;
+}
+
+#previous{
+  font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	color: black;
+	position: fixed;
+	left: 50px;
+	top: 500px;
+  font-weight: bold;
+}
+
+#previous:hover{
+  color:#EEE8AA;
+}
+
+#artone{
+	height:660px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top: 100px;
+}
+
+#arttwo{
+  height:860px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top: 200px;
+}
+
+#artthree{
+  height:860px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top: 300px;
+}
+
+#artfour{
+  height:860px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top: 400px;
+}
+
+#artfive{
+  height:860px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top:500px;
+}
+
+#artsix{
+  height:860px;
+	position: relative;
+	margin: 0px 200px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  top:600px;
+}
+
+.intro{
+  color:gray;
+  font-style: italic;
+}
+
+
+
+
+#slides{
+  display: none;
+  width: 700px;
+  border: none;
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 0px;
+}
+
+#aboutus{
+  width: 550px;
+  height:350px;
+  position: relative;
+  float:left;
+  top: 100px;
+  left: 20px;
+}
+
+.panel{
+  width: 600px;
+  height: 500px;
+}
+
+.one{
+  background-image: url("../img/silde1.jpg");
+}
+
+.two{
+  background-image: url("../img/silde2.jpg");
+}
+
+.three{
+  background-image: url("../img/silde3.jpg");
+  background-position: center;
+}
+
+.slidesjs-next{
+  display: none;
+}
+
+.slidesjs-previous{
+  display: none;
+}
+
+.slidesjs-pagination{
+  display: none;
+}
+
+.slidesjs-play{
+  display: none;
+}
+
+.slidesjs-stop{
+  display: none;
+}
+
+.slidesjs-navigation{
+  display: none;
+}
+
+
+
+
+.img2{
+  height: 450px;
+  width: 450px;
+  border-bottom: solid 4px #EEE8AA;
+  position: relative;
+  float: left;
+  top: 100px;
+  left: 40px;
+}
+
+.img3{
+  height: 450px;
+  width: 600px;
+  border: none;
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 40px;
+  background-image: url("../img/festival.jpg");
+}
+
+
+
+
+.abouttitle{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.abouttitle2{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color:#EEE8AA;
+}
+
+.aboutp{
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:gray;
+}
+
+#centerp{
+  top: 30%;
+  position: relative;
+}
+
+.aboutp1{
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:gray;
+}
+
+.left{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: -2;
+}
+
+.right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: -2;
+}
+
+.pink {
+    background-color: none;
+}
+.red {
+    background-color: none;
+}
+.white {
+    background-color: none;
+
+}
+
+.yellow {
+    background-color: none;
+}
